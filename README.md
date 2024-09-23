@@ -91,10 +91,12 @@ Cada player deve selecionar 1 navio de 3 células, 2 navios de 2 células e 2 na
 
 ### Quando o jogo termina? E como jogar novamente?
 
+
 	Quando um dos jogadores ataca corretamente todos os navios oponentes. No OLED do vencedor deverá aparecer “Vitória” e no do perdedor “Game over”. Para dar início0 a um novo jogo basta apertar o botão “Reset” em ambas as placas.
 
 
 ### Como eu “instalo” o jogo?
+
 
 	Você deve ter duas placas BitDogLab e salvar o código presente no github como main nas suas placas. Além disso, deve ter conectado às portas da UART conectadas fisicamente, de modo que o TX de uma esteja conectado ao RX do outro.
 
