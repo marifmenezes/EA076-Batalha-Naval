@@ -8,9 +8,11 @@ O jogo de Batalha Naval é um clássico jogo de estratégia para dois jogadores,
 O objetivo da Batalha Naval é ser o primeiro jogador a afundar todos os navios do oponente. Os jogadores se alternam tentando adivinhar as coordenadas no tabuleiro do adversário onde os navios estão posicionados. Se acertar a posição de um navio, a jogada é considerada um "acerto" e, se não, é um "erro".
 
 O tabuleiro de cada jogador é uma grade de 5x5 e cada jogador irá jogar da sua própria BitDogLab, de forma que elas irão conversar entre si. Para os navios teremos:
- 	- Um navio de 3 células.
- 	- Dois navios de 2 células.
- 	- Dois navios de 1 célula.
+ 	
+ - Um navio de 3 células.
+ - Dois navios de 2 células.
+ - Dois navios de 1 célula.
+   
 Os navios são colocados horizontalmente ou verticalmente, sem sobreposição. Antes de começar a jogar, cada jogador posiciona seus navios em seu tabuleiro, as células serão marcadas de branco. E quando terminar, irá aparecer seus navios no OLED.
 
 Os jogadores se alternam para "atacar" uma posição no tabuleiro do adversário. Quando o jogador acertar o barco, a sua célula ficará vermelha e no oponente aparecerá um X na célula do navio no OLED. Se errar, ficará azul, pois caiu na água. O jogo termina quando um jogador afunda todos os navios do adversário. Esse jogador é o vencedor.
@@ -23,22 +25,29 @@ Fase de Ataque
 
 ### 1. Posicionamento dos Navios
 Antes de começar a atacar, cada jogador precisa posicionar seus navios no tabuleiro. Os navios têm os seguintes tamanhos:
-1 navio de tamanho 3
-2 navios de tamanho 2
-2 navios de tamanho 1
+- 1 navio de tamanho 3
+- 2 navios de tamanho 2
+- 2 navios de tamanho 1
 
 
 #### Como Posicionar os Navios:
 
 Use o Joystick: Movimente o cursor branco pela matriz de LEDs para selecionar a posição do seu navio.
+
 Movimente o joystick para a esquerda/direita para mover o cursor na direção correspondente.
+
 Movimente o joystick para cima/baixo para ajustar a posição vertical do cursor.
+
 Pressione o Botão A: Quando a posição desejada for selecionada, pressione o botão A para colocar parte do navio naquela célula. Um LED verde suave aparecerá indicando que o navio foi colocado.
+
 Complete o Navio: Continue posicionando partes do navio até que todas as células do navio estejam no tabuleiro. Quando o navio estiver completamente posicionado, o jogo automaticamente passará para o próximo navio.
+
 Finalizar Posicionamento: Quando todos os navios forem posicionados, o jogo mudará para a fase de ataque. O jogador local também enviará uma mensagem ao oponente informando que terminou o posicionamento.
 
-Nota:
+#### Nota:
+
 Você verá seus navios no display OLED enquanto os posiciona.
+
 Os LEDs só mostram os navios temporariamente durante o posicionamento.
 
 
