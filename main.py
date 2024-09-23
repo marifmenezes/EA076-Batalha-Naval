@@ -131,10 +131,10 @@ def read_joystick():
         time.sleep(0.3)
 
     if y_value < (32768 - deadzone):  # Movimento para cima
-        current_y = max(0, current_y - 1)
+        current_y = max(0, current_y + 1)
         time.sleep(0.3)
     elif y_value > (32768 + deadzone):  # Movimento para baixo
-        current_y = min(4, current_y + 1)
+        current_y = min(4, current_y - 1)
         time.sleep(0.3)
 
 # Função de posicionamento de navio
