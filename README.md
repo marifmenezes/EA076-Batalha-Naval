@@ -81,7 +81,7 @@ Cada player deve selecionar 1 navio de 3 células, 2 navios de 2 células e 2 na
 
 ### Como sei quais posições já ataquei?
 
-	Na sua matriz, a posição que você atacou acertando um navio oponente irá ficar acesa na cor vermelha, já a posição que você errou irá aparecer como azul. Essas posições estarão a mostra na matriz sempre que for sua vez de atacar, para que não haja ataques diferentes em uma mesma posição.  
+Na sua matriz, a posição que você atacou acertando um navio oponente irá ficar acesa na cor vermelha, já a posição que você errou irá aparecer como azul. Essas posições estarão a mostra na matriz sempre que for sua vez de atacar, para que não haja ataques diferentes em uma mesma posição.  
 
 
 ### Como saber se meu navio foi atacado?
