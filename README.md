@@ -28,7 +28,7 @@ Antes de começar a atacar, cada jogador precisa posicionar seus navios no tabul
 2 navios de tamanho 1
 
 
-### Como Posicionar os Navios:
+#### Como Posicionar os Navios:
 
 Use o Joystick: Movimente o cursor branco pela matriz de LEDs para selecionar a posição do seu navio.
 Movimente o joystick para a esquerda/direita para mover o cursor na direção correspondente.
@@ -46,13 +46,13 @@ Os LEDs só mostram os navios temporariamente durante o posicionamento.
 Após o posicionamento dos navios, a fase de ataque começa. Durante esta fase, os jogadores se alternam realizando ataques no tabuleiro do oponente.
 
 
-### Como Atacar:
+#### Como Atacar:
 
 Movimente o Cursor: Assim como na fase de posicionamento, use o joystick para mover o cursor branco pela matriz de LEDs.
 Pressione o Botão A: Quando tiver selecionado a posição onde deseja atacar, pressione o botão A para confirmar o ataque. O ataque será enviado ao oponente via UART.
 
 
-### Receber Feedback:
+#### Receber Feedback:
 
 Se o ataque acertar um navio inimigo, o LED correspondente ficará vermelho suave.
 Se o ataque for em uma área sem navio (acertar o mar), o LED ficará azul suave.
@@ -60,13 +60,13 @@ Os resultados também serão exibidos no OLED.
 Alternância de Turnos: Após seu ataque, será a vez do oponente atacar. Aguarde seu próximo turno.
 
 
-### Como Saber se Você Ganhou ou Perdeu
+#### Como Saber se Você Ganhou ou Perdeu
 
 Vitória: Se você acertar todas as posições dos navios do oponente, uma mensagem de "Vitória" será exibida no seu OLED.
 Derrota: Se todos os seus navios forem destruídos, "Game Over" aparecerá no seu OLED.
 
 
-### Dicas de Jogo
+#### Dicas de Jogo
 
 Use o Joystick com cuidado: Movimentar o joystick de maneira brusca pode fazer o cursor se mover mais rápido do que o esperado. Tenha paciência, pois o cursor se move célula por célula.
 Estratégia de Posicionamento: Tente espalhar seus navios de maneira estratégica para dificultar que o oponente os acerte.
