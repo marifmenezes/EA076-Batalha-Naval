@@ -13,9 +13,9 @@ O tabuleiro de cada jogador é uma grade de 5x5 e cada jogador irá jogar da sua
  - Dois navios de 2 células.
  - Dois navios de 1 célula.
    
-Os navios são colocados horizontalmente ou verticalmente, sem sobreposição. Antes de começar a jogar, cada jogador posiciona seus navios em seu tabuleiro, as células serão marcadas de branco. E quando terminar, irá aparecer seus navios no OLED.
+Os navios são colocados horizontalmente ou verticalmente, sem sobreposição. Antes de começar a jogar, cada jogador posiciona seus navios em seu tabuleiro, as células serão marcadas de branco. E quando terminar, irá aparecer seus navios no OLED externo.
 
-Os jogadores se alternam para "atacar" uma posição no tabuleiro do adversário. Quando o jogador acertar o barco, a sua célula ficará vermelha e no oponente aparecerá um X na célula do navio no OLED. Se errar, ficará azul, pois caiu na água. O jogo termina quando um jogador afunda todos os navios do adversário. Esse jogador é o vencedor.
+Os jogadores se alternam para "atacar" uma posição no tabuleiro do adversário, o turno de ataque é mostrado no OLED da BitDogLab. Quando o jogador acertar o barco, a sua célula ficará vermelha e no oponente aparecerá um X na célula do navio no OLED externo. Se errar, ficará azul, pois caiu na água. O jogo termina quando um jogador afunda todos os navios do adversário. Esse jogador é o vencedor.
 
 ## Tutorial do Jogo
 ### Fases do Jogo
@@ -46,7 +46,7 @@ Finalizar Posicionamento: Quando todos os navios forem posicionados, o jogo muda
 
 #### Nota:
 
-Você verá seus navios no display OLED enquanto os posiciona.
+Você verá seus navios no display OLED externo depois que os posiciona.
 
 Os LEDs só mostram os navios temporariamente durante o posicionamento.
 
@@ -85,18 +85,18 @@ Use o Joystick com cuidado: Movimentar o joystick de maneira brusca pode fazer o
 
 Estratégia de Posicionamento: Tente espalhar seus navios de maneira estratégica para dificultar que o oponente os acerte.
 
-Preste Atenção ao Feedback Visual: O display OLED e a matriz de LEDs oferecem informações importantes sobre o status do jogo. Use isso a seu favor!
+Preste Atenção ao Feedback Visual: O display OLED externo e a matriz de LEDs oferecem informações importantes sobre o status do jogo. Use isso a seu favor!
 
 ## Perguntas e Respostas sobre o jogo 
 
 ### Quantos navios posso posicionar?
 
-Cada player deve selecionar 1 navio de 3 células, 2 navios de 2 células e 2 navios de 1 célula. As células devem ser selecionadas pressionando o botão A após cada posição escolhida .Ao final da seleção, o jogador verá seus navios no OLED e deverá esperar o oponente fazer o posicionamento dos seus navios para que a fase de ataque seja iniciada.
+Cada player deve selecionar 1 navio de 3 células, 2 navios de 2 células e 2 navios de 1 célula. As células devem ser selecionadas pressionando o botão A após cada posição escolhida .Ao final da seleção, o jogador verá seus navios no OLED externo e deverá esperar o oponente fazer o posicionamento dos seus navios para que a fase de ataque seja iniciada.
 
 
 ### Como sei que é minha vez de atacar?
 
-Se for seu primeiro ataque, um led irá acender na sua matriz indicando que você deve escolher uma posição para atacar. Caso seja a vez do seu oponente, sua matriz estará completamente apagada e reacenderá após a jogada do oponente. 
+Se for seu primeiro ataque, um led irá acender na sua matriz indicando que você deve escolher uma posição para atacar e o OLED indicará que é seu turno. Caso seja a vez do seu oponente, sua matriz estará completamente apagada e reacenderá após a jogada do oponente. 
 
 
 ### Como sei quais posições já ataquei?
@@ -106,7 +106,7 @@ Na sua matriz, a posição que você atacou acertando um navio oponente irá fic
 
 ### Como saber se meu navio foi atacado?
 	
- Seus navios estarão posicionados no OLED, quando alguma célula do seus navios for atingida aparecerá um “X” na célula correspondente no OLED.
+ Seus navios estarão posicionados no OLED externo, quando alguma célula do seus navios for atingida aparecerá um “X” na célula correspondente no OLED.
 
 
 ### Quando o jogo termina? E como jogar novamente?
